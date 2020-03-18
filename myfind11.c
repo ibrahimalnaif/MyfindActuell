@@ -71,7 +71,7 @@ int main (int argc, char* argv[])
 
 static void no_argv(int argc, char ** parms){
     if (argc == 1) {
-         printf ("default directory ");
+         printf ("Default directory\n");
     parms[1]=".";
     parms[2]=NULL;}
 
@@ -79,7 +79,8 @@ static void no_argv(int argc, char ** parms){
         if (*parms[1] == '-'){
             char *temp;
             int n= argc+2;
-                 printf ("default directory ... %s sollte gegeben sein", parms[1]);
+                printf ("Default directory\n");
+//		... %s sollte gegeben sein", parms[1]);
                  for (int i= n-2;i>=1; i--){
                      temp = parms[i];
                      parms[i+1]=temp;
